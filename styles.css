@@ -1,0 +1,141 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background: #f1f1f1; /* Light grey background */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: #003366; /* Dark blue */
+    color: white;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0400f5; /* Golden color on hover */
+}
+
+.section {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Dark blue */
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 1.5rem;
+}
+
+form input {
+    width: 80%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #003366; /* Dark blue focus */
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    background: #003366; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1000f5; /* Golden color on hover */
+}
+
+footer {
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+nav ul li a.active {
+  color: #0041f5; /* Golden color for the active link */
+  border-bottom: 2px solid #0010f5; /* Highlight with an underline */
+}
+
+footer p {
+    font-size: 0.9rem;
+}
